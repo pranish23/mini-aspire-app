@@ -26,7 +26,7 @@ Build & Run     :   make build && make run
 ```
 ## Test
 ```bash
-# make test
+make test
 ```
 
 ## Postman collection
