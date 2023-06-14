@@ -1,0 +1,181 @@
+{
+	"info": {
+		"_postman_id": "9c60ea93-351e-4d24-9c5e-b2a8ea090cd0",
+		"name": "mini-app",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14350627"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/loan/customer1/view",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "customer123#1",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "customer1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/loan/customer1/view",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"loan",
+						"customer1",
+						"view"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/loan/customer1/submit",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "customer123#1",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "customer1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"loan_amount\":1000,\n    \"loan_term\":3\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/loan/customer1/submit",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"loan",
+						"customer1",
+						"submit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/loan/loan-717445cb-05e5-4d65-bb39-43615b2a5190/approve",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "admin12",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "admin123#1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/loan/loan-717445cb-05e5-4d65-bb39-43615b2a5190/approve",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"loan",
+						"loan-717445cb-05e5-4d65-bb39-43615b2a5190",
+						"approve"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/loan/loan-717445cb-05e5-4d65-bb39-43615b2a5190/approve",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "customer123#1",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "customer1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"loan_id\":\"loan-e0f7f400-6948-45f9-a5ec-59303b0f0a28\",\n    \"repayment_amount\":333.33\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/loan/customer1/repay",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"loan",
+						"customer1",
+						"repay"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
