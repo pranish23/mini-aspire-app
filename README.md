@@ -1,8 +1,21 @@
 ## Description
 
 Mini apsire app by Pranish Ajagekar
- 
 
+## Installation
+
+```bash
+(If you dont have golang installed)
+```
+Refer this link : https://go.dev/doc/install
+
+### Setup
+Follow this if you want to run it locally, or directly user binary file to run app using
+`make run`
+```bash
+go mod tidy
+go mod vendor
+```
 ## Run project
 
 ```bash
@@ -15,13 +28,6 @@ Build & Run     :   make build && make run
 ```bash
 # make test
 ```
-
-## Installation
-
-```bash
-(If you dont have golang installed)
-```
-Refer this link : https://go.dev/doc/install
 
 ## Postman collection
 Please check ```./postman_collection``` folder in the project
