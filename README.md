@@ -1,3 +1,61 @@
+## Description
+
+Mini apsire app by Pranish Ajagekar
+ 
+
+## Run project
+
+```bash
+Run locally     :   make dev
+Build           :   make build
+Run             :   make run
+Build & Run     :   make build && make run
+```
+## Test
+```bash
+# make test
+```
+
+## Installation
+
+```bash
+(If you dont have golang installed)
+```
+Refer this link : https://go.dev/doc/install
+
+## Postman collection
+Please check ```./postman_collection``` folder in the project
+
+- ```/``` Healthcheck API
+- ```/loan/:customerID/view``` View customer loans  
+- ```/loan/:customerID/submit``` Apply for a new customer loan  
+- ```/loan/:loanID/approve``` Approve loan (On admins allowed)  
+- ```/loan/:customerID/repay``` Repay loan term and mark them as paid
+
+## Next steps
+- The API will run on http://localhost:3000/
+- Use postman_collection for testing
+- Protected APIs can be accesed with ```Basic Auth``` , check credentials in ```user/users.go```
+- Run ```make test``` to run unit tests
+
+### Technologies Used
+- Golang (Backend)
+- Fiber https://github.com/gofiber/fiber (Web Framework)
+- go-memdb https://github.com/hashicorp/go-memdb (In memory Database) 
+
+### Design
+The mini aspire app is minimalistic web app where have two type of roles:
+- Admins
+- Customers
+Customers can Read , Submit & Repay a loan.
+
+Admins can approve the loan submitted by customers.
+
+*NOTE:*
+
+Customer can only repay loans terms for loan which are approved to admins.
+
+
 
 ## API Reference
 
@@ -67,3 +125,6 @@ Repay an approved loan request
 Here is a quick demo of the app.
 
 https://drive.google.com/file/d/1cFznlNftnmLMSvgYtHHnaaGI2ENGqZRv/view?usp=drive_link
+
+
+
